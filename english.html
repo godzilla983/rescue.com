@@ -101,7 +101,24 @@
 	<a class="injury-link" href="https://www.youtube.com/watch?v=BB2jzkjPm0A" onclick="showInjuryVideo('leg')">hand swollen  </a>
         <a class="injury-link" href="https://www.youtube.com/watch?v=68Swgkjzuy8&list=PLGi_K7VEsg4eHiWh5Lpug6tvB1RtI1kuQ" onclick="showInjuryVideo('head')">Head bleeding</a>
         <a class="injury-link" href="https://www.youtube.com/watch?v=1f4DL_P8JY8&list=PLGi_K7VEsg4eHiWh5Lpug6tvB1RtI1kuQ&index=3" onclick="showInjuryVideo('knee')">head swollen</a>
-        <a class="injury-link" href="https://www.youtube.com/watch?v=kXTUAH2kG_0&list=PLGi_K7VEsg4eHiWh5Lpug6tvB1RtI1kuQ&index=4" onclick="showInjuryVideo('hand')">knee fracture</a>    </div>
+        <a class="injury-link" href="https://www.youtube.com/watch?v=kXTUAH2kG_0&list=PLGi_K7VEsg4eHiWh5Lpug6tvB1RtI1kuQ&index=4" onclick="showInjuryVideo('hand')">knee fracture</a>    </div
+
+ <div id="camera-container">
+        <video id="camera" autoplay></video>
+        <button id="capture-button" onclick="captureImage()">Take Picture</button>
+        <button id="stop-camera-button" onclick="stopCamera()">Stop Camera</button>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+    
+    <div>
+        <button onclick="startCamera()">Start Camera</button>
+        <h2 id="contact-text">Contact:</h2>
+        <button onclick="callNumber(108)">call 108</button>
+        <button onclick="callNumber(100)">call 100</button>
+    </div>
+
+    
+</div>
     
    
 
